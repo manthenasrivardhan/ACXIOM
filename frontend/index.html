@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AcxiomCRM</title><link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div id="login" class="login">
+  <div class="login-card">
+    <div class="brand">AcxiomCRM</div>
+    <p class="muted">Customer Relationship Management</p>
+    <label>Email</label><input id="email" type="email" value="admin@acxiomcrm.local">
+    <label>Password</label><input id="password" type="password" value="Admin@123">
+    <button id="loginButton" class="primary">Sign in</button>
+    <div id="loginMsg" class="message"></div>
+  </div>
+</div>
+<div id="app" class="hidden">
+<header><div class="brand-small">AcxiomCRM</div><div class="spacer"></div><span id="who"></span><button id="logoutButton" class="secondary">Logout</button></header>
+<aside>
+  <button data-page="dashboard">Dashboard</button>
+  <button data-page="customers">Customers</button>
+  <button data-page="leads">Leads</button>
+  <button data-page="opportunities">Opportunities</button>
+  <button data-page="followups">Follow-Ups</button>
+  <button data-page="users" id="usersNav" class="admin-only">Users & Roles</button>
+  <button data-page="reports">Reports</button>
+  <button data-page="audit">Audit</button>
+</aside>
+<main id="main"></main>
+</div>
+<script src="/static/app.js?v=final3"></script>
+</body></html>
